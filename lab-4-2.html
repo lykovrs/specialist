@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Цикл while</title>
+    <script>
+
+        var book1 = {
+            title : "Война и Мир",
+            pubYear: 1872,
+            price : 2399,
+            show : function() {
+                console.log( (this).title + " - " + (this).price );
+            }
+        };
+
+        function showBook(){
+            console.log(key + " - " + book1[key]);
+        }
+
+
+        var book2 = {};
+        book2.title = "Горе от ума";
+        book2.pubYear = 1716;
+        book2.price = 450;
+        book2.show = showBook;
+
+
+        for(var key in book1){
+            console.log(key + " - " + book1[key]);
+        };
+
+        for(var key2 in book2){
+            console.log(key2 + " - " + book2[key2]);
+        };
+
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

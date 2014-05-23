@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Цикл while</title>
+    <script>
+
+        var lines = 4;
+
+        var star, space;
+        var stars, spaces;
+
+        for(var curLine = 1; curLine <= lines; curLine++){
+
+            space = lines - curLine;
+            spaces ="";
+
+
+            for(var i = 0; i<space; i++){
+                spaces += "_";
+            }
+
+            star = curLine * 2 - 1;
+            stars = "";
+
+            for(var i = 0; i < star; i++){
+                stars +="*"
+            }
+
+            console.log(spaces + stars)
+
+        }
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

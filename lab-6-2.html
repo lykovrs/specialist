@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>C</title>
+    <script>
+
+        function Book(title){
+
+            this.title = title,
+            this.pubYear = "",
+            this.price = "100р.";
+
+        }
+
+        Book.prototype.show = function () {
+            console.log(this.title + " - " + this.price)
+
+        };
+
+        var a = new Book("Война и Мир");
+        var b = new Book("Горе от ума");
+        b.price = "150р.";
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

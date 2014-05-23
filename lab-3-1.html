@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Цикл while</title>
+    <script>
+
+
+
+        function drawLine(cntTabs, cntSymbols, tab, symbol){
+
+            var star;
+            var stars;
+
+            for(var curLine = 1; curLine <= cntSymbols; curLine++){
+                cntTabs = cntSymbols - curLine;
+                spaces = "";
+
+                for(var i = 0; i < cntTabs; i++){
+                    tab += " ";
+                }
+
+                star = curLine * 2 -1;
+                stars = " ";
+
+                for(var i = 0; i < star; i++){
+                    stars += symbol;
+                }
+
+                console.log(tab + stars);
+            }
+        }
+
+        drawLine(5, 3, " ", "*")
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>

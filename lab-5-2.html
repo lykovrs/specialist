@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Цикл while</title>
+    <script>
+
+      function substrCount(input, needle, offset, length){
+          if(isNaN(offset)){
+              offset = 0;
+          }
+          if(isNaN(length) && length > input.length){
+              length = input.length;
+          }
+
+          if(length){
+              input = input.substr(0, length);
+          }
+          var count = 0;
+          var pos = input.indexOf(needle, offset);
+          while ( pos != -1 ) {
+              count++;
+              pos = input.indexOf(needle,pos+1);
+          }
+
+          return count;
+      };
+
+
+        console.log(substrCount("Good Golly Miss Molly", "ll", 7, 55));
+
+
+    </script>
+</head>
+<body>
+
+</body>
+</html>
